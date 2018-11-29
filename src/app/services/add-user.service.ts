@@ -9,7 +9,7 @@ export class AddUserService {
   constructor(private http:HttpClient) { }
 
   addUser(fv){
-    return this.http.post("https://dressmakers.cfapps.io/user/add",fv)
+    return this.http.post("http://localhost:8888/user/add",fv)
   }
 
 }
